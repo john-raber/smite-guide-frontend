@@ -1,33 +1,35 @@
 import React, { Fragment } from "react";
 import { Navbar, NavbarBrand, Nav, NavItem, NavLink } from "reactstrap";
-import { FaSignInAlt, FaSignOutAlt } from "react-icons/fa";
+import { FaSignInAlt, FaSignOutAlt, FaBolt } from "react-icons/fa";
 
 const HeaderMenu = () => {
   return (
     <Fragment>
-      <Navbar dark fixed>
-        <NavbarBrand>SmiteGuide</NavbarBrand>
+      <Navbar>
+        <NavbarBrand href="/">
+          <FaBolt color="#ecc345" /> <p>SmiteGuide</p>
+        </NavbarBrand>
         <Nav>
           <NavItem>
-            <NavLink>About</NavLink>
+            <NavLink href="/about">About</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink>Gods</NavLink>
+            <NavLink href="/gods">Gods</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink>Items</NavLink>
+            <NavLink href="/items">Items</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink>Game Modes</NavLink>
+            <NavLink href="/game-modes">Game Modes</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink>Patch Notes</NavLink>
+            <NavLink href="/patch-notes">Patch Notes</NavLink>
           </NavItem>
         </Nav>
         <Nav>
           <NavItem>
             <NavLink>
-              <FaSignInAlt />
+              <FaSignInAlt color="white" />
             </NavLink>
           </NavItem>
         </Nav>
