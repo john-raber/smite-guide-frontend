@@ -9,5 +9,5 @@ barrier.
 There are currently 98 gods in Smite and that number is constantly growing, so
 the knowledge gap between experienced players and someone who is just picking up
 the game is constantly growing. SmiteGuide is a site where experienced Smite
-players can share their knowledge of the game with those who might just be
-getting started.
+players can share their knowledge of the game with those who are just getting
+started and learning the game.
