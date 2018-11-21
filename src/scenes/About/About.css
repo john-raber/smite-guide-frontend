@@ -1,0 +1,16 @@
+/* Setting the background color to match the App's background */
+.About {
+  background-color: rgb(72, 76, 84);
+  text-align: left;
+}
+
+/* Setting the font color for the title and paragraphs on the about page */
+.About p,
+h3 {
+  color: rgb(255, 255, 255);
+}
+
+/* Setting the color of the horizontal line on the about page */
+.About hr {
+  border-color: rgb(255, 255, 255);
+}

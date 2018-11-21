@@ -2,6 +2,8 @@ import React, { Fragment } from "react";
 import { Navbar, NavbarBrand, Nav, NavItem, NavLink } from "reactstrap";
 import { FaSignInAlt, FaSignOutAlt, FaBolt } from "react-icons/fa";
 
+import "./HeaderMenu.css";
+
 const HeaderMenu = () => {
   return (
     <Fragment>
@@ -28,8 +30,8 @@ const HeaderMenu = () => {
         </Nav>
         <Nav>
           <NavItem>
-            <NavLink>
-              <FaSignInAlt color="white" />
+            <NavLink href="/login">
+              Login <FaSignInAlt color="white" />
             </NavLink>
           </NavItem>
         </Nav>

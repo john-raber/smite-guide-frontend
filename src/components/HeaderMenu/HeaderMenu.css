@@ -1,0 +1,10 @@
+/* Setting the color and display type of 'SmiteGuide' in the HeaderMenu */
+.navbar-brand p {
+  display: inline;
+  color: rgb(255, 255, 255);
+}
+
+/* Setting the color of links in the HeaderMenu */
+.nav-item a.nav-link {
+  color: rgb(255, 255, 255);
+}
