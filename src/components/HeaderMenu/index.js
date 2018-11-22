@@ -31,7 +31,7 @@ const HeaderMenu = () => {
         <Nav>
           <NavItem>
             <NavLink href="/login">
-              Login <FaSignInAlt color="white" />
+              Sign Up/Sign In <FaSignInAlt color="white" />
             </NavLink>
           </NavItem>
         </Nav>

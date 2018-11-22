@@ -7,6 +7,7 @@ const EmailInput = ({ value, onChange }) => {
       <Label for="email">Email</Label>
       <Input
         name="email"
+        type="email"
         value={value}
         onChange={e => onChange(e.target.name, e.target.value)}
       />
