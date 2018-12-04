@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import { Form, FormGroup, Label, Input, Button } from "reactstrap";
+import { Form, Button } from "reactstrap";
 
-import "./LoginForm.css";
 import EmailInput from "../EmailInput/index";
 import PasswordInput from "../PasswordInput/index";
 
@@ -28,7 +27,7 @@ class LoginForm extends Component {
           value={this.state.password}
           onChange={this.handleInputChange}
         />
-        <Button color="primary">Login</Button>
+        <Button color="warning">Login</Button>
       </Form>
     );
   }

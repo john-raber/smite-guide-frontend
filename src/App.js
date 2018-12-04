@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
 import { Switch, Route, withRouter } from "react-router-dom";
 
 import "./App.css";
@@ -20,4 +21,10 @@ class App extends Component {
   }
 }
 
-export default withRouter(App);
+const mapStateToProps = state => {
+  return {
+    currentUser: state.currentUser
+  };
+};
+
+export default withRouter(connect(mapStateToProps)(App));

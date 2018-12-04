@@ -1,4 +1,4 @@
-**_ SmiteGuide _**
+# SmiteGuide
 
 After playing Smite for X weeks/months/years, experienced players have a level
 of understanding of what each god in the game can do and what gods can counter a

@@ -1,6 +1,6 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
-import { Container, Jumbotron } from "reactstrap";
+import { Jumbotron } from "reactstrap";
 
 import "./About.css";
 
