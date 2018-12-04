@@ -65,4 +65,14 @@ function getCurrentUserFromToken() {
   };
 }
 
-export { createUser, loginUser, getCurrentUserFromToken };
+// Logging out does not occur within the login scene - it occurs within the HeaderMenu
+// component.  Not yet sure how to move this functionality to that component folder.
+// Will that change how my reducers/redux store would be set up?  Leaving here for now.
+function logoutUser() {
+  return dispatch => {
+    localStorage.clear();
+    dispatch(setCurrentUser(null));
+  };
+}
+
+export { createUser, loginUser, getCurrentUserFromToken, logoutUser };
