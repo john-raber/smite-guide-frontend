@@ -5,8 +5,8 @@ import { Navbar, NavbarBrand, Nav, NavItem, NavLink } from "reactstrap";
 import { FaSignInAlt, FaSignOutAlt, FaBolt } from "react-icons/fa";
 
 import "./HeaderMenu.css";
-import LoginIcon from "./components/LoginIcon/index";
-import LogoutIcon from "./components/LogoutIcon/index";
+import CurrentUserOptions from "./components/CurrentUserOptions/index";
+// import LogoutIcon from "./components/LogoutIcon/index";
 
 const HeaderMenu = ({ currentUser }) => {
   return (
@@ -34,10 +34,7 @@ const HeaderMenu = ({ currentUser }) => {
         </Nav>
         <Nav>
           <NavItem>
-            <Switch>
-              <Route exact path="/profile" component={LogoutIcon} />
-              <Route path="/" component={LoginIcon} />
-            </Switch>
+            <CurrentUserOptions />
           </NavItem>
         </Nav>
       </Navbar>

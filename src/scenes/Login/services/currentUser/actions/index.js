@@ -47,4 +47,22 @@ function loginUser({ user }) {
   };
 }
 
-export { createUser, loginUser };
+function getCurrentUserFromToken() {
+  return dispatch => {
+    let token = localStorage.getItem("token");
+
+    if (!token || token === "") {
+      return;
+    }
+
+    return fetch(PROFILE_URL, {
+      headers: {
+        Authorization: `Bearer ${token}`
+      }
+    })
+      .then(r => r.json())
+      .then(json => dispatch(setCurrentUser(json)));
+  };
+}
+
+export { createUser, loginUser, getCurrentUserFromToken };

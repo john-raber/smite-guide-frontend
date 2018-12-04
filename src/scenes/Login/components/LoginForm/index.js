@@ -30,7 +30,7 @@ class LoginForm extends Component {
 
   render() {
     return (
-      <Form>
+      <Form onSubmit={this.handleFormSubmit}>
         <EmailInput
           value={this.state.email}
           onChange={this.handleInputChange}
