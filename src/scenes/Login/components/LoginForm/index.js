@@ -1,13 +1,25 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
+import { withRouter } from "react-router-dom";
 import { Form, Button } from "reactstrap";
 
 import EmailInput from "../EmailInput/index";
 import PasswordInput from "../PasswordInput/index";
 
+import { loginUser } from "../../services/currentUser/actions/index";
+
 class LoginForm extends Component {
   state = {
     email: "",
     password: ""
+  };
+
+  handleFormSubmit = e => {
+    const { loginUser, history } = this.props;
+
+    e.preventDefault();
+
+    loginUser({ user: this.state }).then(history.push("/profile"));
   };
 
   handleInputChange = (name, value) => {
@@ -33,4 +45,9 @@ class LoginForm extends Component {
   }
 }
 
-export default LoginForm;
+export default withRouter(
+  connect(
+    null,
+    { loginUser }
+  )(LoginForm)
+);

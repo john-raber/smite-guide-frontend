@@ -29,4 +29,22 @@ function createUser({ user }) {
   };
 }
 
-export { createUser };
+function loginUser({ user }) {
+  return dispatch => {
+    return fetch(LOGIN_URL, {
+      method: "POST",
+      body: JSON.stringify({ user }),
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json"
+      }
+    })
+      .then(r => r.json())
+      .then(json => {
+        localStorage.setItem("token", json.jwt);
+        dispatch(setCurrentUser(json));
+      });
+  };
+}
+
+export { createUser, loginUser };
