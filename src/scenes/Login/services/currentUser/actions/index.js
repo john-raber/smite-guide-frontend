@@ -2,7 +2,7 @@ import { SET_CURRENT_USER } from "./types";
 
 const USERS_URL = "http://localhost:3001/api/v1/users";
 const LOGIN_URL = "http://localhost:3001/api/v1/login";
-const PROFILE_URL = "http://localhost:3001/api/v1/profile";
+const PROFILE_URL = "http://localhost:3001/api/v1/users/profile";
 
 function setCurrentUser({ user }) {
   return {
