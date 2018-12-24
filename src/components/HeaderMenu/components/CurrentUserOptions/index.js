@@ -6,9 +6,17 @@ import LogoutIcon from "./components/LogoutIcon/index";
 
 const CurrentUserOptions = ({ currentUser }) => {
   if (!!currentUser) {
-    return <LogoutIcon />;
+    return (
+      <div className="userOptions">
+        <LogoutIcon />
+      </div>
+    );
   } else {
-    return <LoginIcon />;
+    return (
+      <div className="userOptions">
+        <LoginIcon />
+      </div>
+    );
   }
 };
 
@@ -19,3 +27,5 @@ const mapStateToProps = state => {
 };
 
 export default connect(mapStateToProps)(CurrentUserOptions);
+
+export { CurrentUserOptions };

@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LogoutIcon matches its snapshot 1`] = `
+<NavLink
+  className="logoutIcon"
+  href="/login"
+  tag="a"
+>
+  Logout 
+  <FaSignOutAlt
+    color="white"
+  />
+</NavLink>
+`;

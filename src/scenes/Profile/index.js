@@ -5,7 +5,7 @@ import "./Profile.css";
 
 const Profile = () => {
   return (
-    <Container>
+    <Container className="Profile">
       <Row>
         <Col md={{ size: 6 }}>
           <Jumbotron>

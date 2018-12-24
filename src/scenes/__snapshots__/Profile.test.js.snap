@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Profile matches its snapshot 1`] = `
+<Container
+  className="Profile"
+  tag="div"
+>
+  <Row
+    tag="div"
+  >
+    <Col
+      md={
+        Object {
+          "size": 6,
+        }
+      }
+      tag="div"
+      widths={
+        Array [
+          "xs",
+          "sm",
+          "md",
+          "lg",
+          "xl",
+        ]
+      }
+    >
+      <Jumbotron
+        tag="div"
+      >
+        <h4
+          className="display-4"
+        >
+          Guides
+        </h4>
+      </Jumbotron>
+    </Col>
+    <Col
+      md={
+        Object {
+          "size": 6,
+        }
+      }
+      tag="div"
+      widths={
+        Array [
+          "xs",
+          "sm",
+          "md",
+          "lg",
+          "xl",
+        ]
+      }
+    >
+      <Jumbotron
+        tag="div"
+      >
+        <h4
+          className="display-4"
+        >
+          Trainers
+        </h4>
+      </Jumbotron>
+    </Col>
+  </Row>
+</Container>
+`;

@@ -4,7 +4,7 @@ import { FaSignInAlt } from "react-icons/fa";
 
 const LoginIcon = () => {
   return (
-    <NavLink href="/login">
+    <NavLink href="/login" className="loginIcon">
       Sign Up/Sign In <FaSignInAlt color="white" />
     </NavLink>
   );

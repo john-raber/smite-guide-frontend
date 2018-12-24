@@ -37,7 +37,7 @@ class SignUpForm extends Component {
 
   render() {
     return (
-      <Form onSubmit={this.handleFormSubmit}>
+      <Form className="SignUpForm" onSubmit={this.handleFormSubmit}>
         <EmailInput
           value={this.state.email}
           onChange={this.handleInputChange}
@@ -62,3 +62,5 @@ export default withRouter(
     { createUser }
   )(SignUpForm)
 );
+
+export { SignUpForm };

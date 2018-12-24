@@ -8,7 +8,7 @@ import SignUpForm from "./components/SignUpForm/index";
 
 const Login = () => {
   return (
-    <Container>
+    <Container className="Login">
       <Row>
         <Col md={{ size: 2 }} />
         <Col md={{ size: 3 }}>
@@ -27,3 +27,4 @@ const Login = () => {
 };
 
 export default withRouter(Login);
+export { Login };

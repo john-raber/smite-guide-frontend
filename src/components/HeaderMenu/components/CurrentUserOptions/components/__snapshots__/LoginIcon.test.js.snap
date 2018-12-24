@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoginIcon matches its snapshot 1`] = `
+<NavLink
+  className="loginIcon"
+  href="/login"
+  tag="a"
+>
+  Sign Up/Sign In 
+  <FaSignInAlt
+    color="white"
+  />
+</NavLink>
+`;

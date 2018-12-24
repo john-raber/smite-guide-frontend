@@ -41,3 +41,5 @@ export default withRouter(
     { getCurrentUserFromToken }
   )(App)
 );
+
+export { App };

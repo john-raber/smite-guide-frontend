@@ -1,0 +1,108 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login matches its snapshot 1`] = `
+<Container
+  className="Login"
+  tag="div"
+>
+  <Row
+    tag="div"
+  >
+    <Col
+      md={
+        Object {
+          "size": 2,
+        }
+      }
+      tag="div"
+      widths={
+        Array [
+          "xs",
+          "sm",
+          "md",
+          "lg",
+          "xl",
+        ]
+      }
+    />
+    <Col
+      md={
+        Object {
+          "size": 3,
+        }
+      }
+      tag="div"
+      widths={
+        Array [
+          "xs",
+          "sm",
+          "md",
+          "lg",
+          "xl",
+        ]
+      }
+    >
+      <h3>
+        Login
+      </h3>
+      <withRouter(Connect(LoginForm)) />
+    </Col>
+    <Col
+      md={
+        Object {
+          "size": 2,
+        }
+      }
+      tag="div"
+      widths={
+        Array [
+          "xs",
+          "sm",
+          "md",
+          "lg",
+          "xl",
+        ]
+      }
+    />
+    <Col
+      md={
+        Object {
+          "size": 3,
+        }
+      }
+      tag="div"
+      widths={
+        Array [
+          "xs",
+          "sm",
+          "md",
+          "lg",
+          "xl",
+        ]
+      }
+    >
+      <h3>
+        Sign Up
+      </h3>
+      <withRouter(Connect(SignUpForm)) />
+    </Col>
+    <Col
+      md={
+        Object {
+          "size": 2,
+        }
+      }
+      tag="div"
+      widths={
+        Array [
+          "xs",
+          "sm",
+          "md",
+          "lg",
+          "xl",
+        ]
+      }
+    />
+  </Row>
+</Container>
+`;

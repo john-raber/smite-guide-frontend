@@ -1,0 +1,177 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeaderMenu matches its snapshot when a currentUser is set 1`] = `
+<Fragment>
+  <Navbar
+    className="headerMenu"
+    expand={false}
+    tag="nav"
+  >
+    <NavbarBrand
+      href="/"
+      tag="a"
+    >
+      <FaBolt
+        color="#ecc345"
+      />
+       
+      <p>
+        SmiteGuide
+      </p>
+    </NavbarBrand>
+    <Nav
+      tag="ul"
+      vertical={false}
+    >
+      <NavItem
+        tag="li"
+      >
+        <NavLink
+          href="/about"
+          tag="a"
+        >
+          About
+        </NavLink>
+      </NavItem>
+      <NavItem
+        tag="li"
+      >
+        <NavLink
+          href="/gods"
+          tag="a"
+        >
+          Gods
+        </NavLink>
+      </NavItem>
+      <NavItem
+        tag="li"
+      >
+        <NavLink
+          href="/items"
+          tag="a"
+        >
+          Items
+        </NavLink>
+      </NavItem>
+      <NavItem
+        tag="li"
+      >
+        <NavLink
+          href="/game-modes"
+          tag="a"
+        >
+          Game Modes
+        </NavLink>
+      </NavItem>
+      <NavItem
+        tag="li"
+      >
+        <NavLink
+          href="/patch-notes"
+          tag="a"
+        >
+          Patch Notes
+        </NavLink>
+      </NavItem>
+    </Nav>
+    <Nav
+      tag="ul"
+      vertical={false}
+    >
+      <NavItem
+        tag="li"
+      >
+        <Connect(CurrentUserOptions) />
+      </NavItem>
+    </Nav>
+  </Navbar>
+</Fragment>
+`;
+
+exports[`HeaderMenu matches its snapshot when no currentUser is set 1`] = `
+<Fragment>
+  <Navbar
+    className="headerMenu"
+    expand={false}
+    tag="nav"
+  >
+    <NavbarBrand
+      href="/"
+      tag="a"
+    >
+      <FaBolt
+        color="#ecc345"
+      />
+       
+      <p>
+        SmiteGuide
+      </p>
+    </NavbarBrand>
+    <Nav
+      tag="ul"
+      vertical={false}
+    >
+      <NavItem
+        tag="li"
+      >
+        <NavLink
+          href="/about"
+          tag="a"
+        >
+          About
+        </NavLink>
+      </NavItem>
+      <NavItem
+        tag="li"
+      >
+        <NavLink
+          href="/gods"
+          tag="a"
+        >
+          Gods
+        </NavLink>
+      </NavItem>
+      <NavItem
+        tag="li"
+      >
+        <NavLink
+          href="/items"
+          tag="a"
+        >
+          Items
+        </NavLink>
+      </NavItem>
+      <NavItem
+        tag="li"
+      >
+        <NavLink
+          href="/game-modes"
+          tag="a"
+        >
+          Game Modes
+        </NavLink>
+      </NavItem>
+      <NavItem
+        tag="li"
+      >
+        <NavLink
+          href="/patch-notes"
+          tag="a"
+        >
+          Patch Notes
+        </NavLink>
+      </NavItem>
+    </Nav>
+    <Nav
+      tag="ul"
+      vertical={false}
+    >
+      <NavItem
+        tag="li"
+      >
+        <Connect(CurrentUserOptions) />
+      </NavItem>
+    </Nav>
+  </Navbar>
+</Fragment>
+`;

@@ -11,7 +11,7 @@ import CurrentUserOptions from "./components/CurrentUserOptions/index";
 const HeaderMenu = ({ currentUser }) => {
   return (
     <Fragment>
-      <Navbar>
+      <Navbar className="headerMenu">
         <NavbarBrand href="/">
           <FaBolt color="#ecc345" /> <p>SmiteGuide</p>
         </NavbarBrand>
@@ -49,3 +49,4 @@ const mapStateToProps = state => {
 };
 
 export default connect(mapStateToProps)(HeaderMenu);
+export { HeaderMenu };

@@ -7,7 +7,7 @@ import { logoutUser } from "../../../../../../scenes/Login/services/currentUser/
 
 const LogoutIcon = ({ logoutUser }) => {
   return (
-    <NavLink href="/login" onClick={logoutUser}>
+    <NavLink href="/login" onClick={logoutUser} className="logoutIcon">
       Logout <FaSignOutAlt color="white" />
     </NavLink>
   );
@@ -17,3 +17,5 @@ export default connect(
   null,
   { logoutUser }
 )(LogoutIcon);
+
+export { LogoutIcon };

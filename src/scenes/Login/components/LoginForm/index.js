@@ -30,7 +30,7 @@ class LoginForm extends Component {
 
   render() {
     return (
-      <Form onSubmit={this.handleFormSubmit}>
+      <Form className="LoginForm" onSubmit={this.handleFormSubmit}>
         <EmailInput
           value={this.state.email}
           onChange={this.handleInputChange}
@@ -51,3 +51,5 @@ export default withRouter(
     { loginUser }
   )(LoginForm)
 );
+
+export { LoginForm };

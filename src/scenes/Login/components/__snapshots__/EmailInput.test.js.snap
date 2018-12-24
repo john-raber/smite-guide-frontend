@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EmailInput matches its snapshot 1`] = `
+<FormGroup
+  className="EmailInput"
+  tag="div"
+>
+  <Label
+    for="email"
+    tag="label"
+    widths={
+      Array [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+      ]
+    }
+  >
+    Email
+  </Label>
+  <Input
+    name="email"
+    onChange={[Function]}
+    type="email"
+  />
+</FormGroup>
+`;

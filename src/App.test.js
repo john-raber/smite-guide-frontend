@@ -1,9 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+import React from "react";
+import { shallow } from "enzyme";
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-  ReactDOM.unmountComponentAtNode(div);
+import { App } from "./App";
+
+xit("renders without crashing", () => {
+  const wrapper = shallow(<App />);
+
+  expect(wrapper.find(".App").length).toEqual(1);
 });

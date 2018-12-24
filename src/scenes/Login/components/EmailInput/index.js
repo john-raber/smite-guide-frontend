@@ -3,7 +3,7 @@ import { FormGroup, Label, Input } from "reactstrap";
 
 const EmailInput = ({ value, onChange }) => {
   return (
-    <FormGroup>
+    <FormGroup className="EmailInput">
       <Label for="email">Email</Label>
       <Input
         name="email"

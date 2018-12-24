@@ -3,7 +3,7 @@ import { FormGroup, Label, Input } from "reactstrap";
 
 const PasswordConfirmationInput = ({ value, onChange }) => {
   return (
-    <FormGroup>
+    <FormGroup className="PasswordConfirmationInput">
       <Label for="passwordConfirmation">Confirm Password</Label>
       <Input
         name="passwordConfirmation"
