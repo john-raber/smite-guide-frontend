@@ -75,4 +75,13 @@ function logoutUser() {
   };
 }
 
-export { createUser, loginUser, getCurrentUserFromToken, logoutUser };
+export {
+  USERS_URL,
+  LOGIN_URL,
+  PROFILE_URL,
+  setCurrentUser,
+  createUser,
+  loginUser,
+  getCurrentUserFromToken,
+  logoutUser
+};
