@@ -1,19 +1,18 @@
-import React, { Fragment } from "react";
-import { connect } from "react-redux";
-import { Switch, Route } from "react-router-dom";
-import { Navbar, NavbarBrand, Nav, NavItem, NavLink } from "reactstrap";
-import { FaSignInAlt, FaSignOutAlt, FaBolt } from "react-icons/fa";
+import React, { Fragment } from 'react';
+import { connect } from 'react-redux';
+import { Navbar, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import { FaBolt } from 'react-icons/fa';
 
-import "./HeaderMenu.css";
-import CurrentUserOptions from "./components/CurrentUserOptions/index";
-// import LogoutIcon from "./components/LogoutIcon/index";
+import './HeaderMenu.css';
+import CurrentUserOptions from './components/CurrentUserOptions/index';
 
-const HeaderMenu = ({ currentUser }) => {
+const HeaderMenu = () => {
   return (
     <Fragment>
       <Navbar className="headerMenu">
         <NavbarBrand href="/">
-          <FaBolt color="#ecc345" /> <p>SmiteGuide</p>
+          <FaBolt color="#ecc345" />
+          <p> SmiteGuide</p>
         </NavbarBrand>
         <Nav>
           <NavItem>

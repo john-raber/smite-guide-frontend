@@ -1,14 +1,14 @@
-import React, { Component } from "react";
-import { connect } from "react-redux";
-import { Switch, Route, withRouter } from "react-router-dom";
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { Switch, Route, withRouter } from 'react-router-dom';
 
-import "./App.css";
-import HeaderMenu from "./components/HeaderMenu/index";
-import Login from "./scenes/Login/index";
-import About from "./scenes/About/index";
-import Profile from "./scenes/Profile/index";
+import './App.css';
+import HeaderMenu from './components/HeaderMenu/index';
+import Login from './scenes/Login/index';
+import About from './scenes/About/index';
+import Profile from './scenes/Profile/index';
 
-import { getCurrentUserFromToken } from "./scenes/Login/services/currentUser/actions/index";
+import { getCurrentUserFromToken } from './scenes/Login/services/currentUser/actions/index';
 
 class App extends Component {
   componentDidMount() {
