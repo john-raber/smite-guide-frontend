@@ -1,8 +1,8 @@
-import { SET_CURRENT_USER } from "./types";
+import { SET_CURRENT_USER } from './types';
 
-const USERS_URL = "http://localhost:3001/api/v1/users";
-const LOGIN_URL = "http://localhost:3001/api/v1/login";
-const PROFILE_URL = "http://localhost:3001/api/v1/users/profile";
+const USERS_URL = 'http://localhost:3001/api/v1/users';
+const LOGIN_URL = 'http://localhost:3001/api/v1/login';
+const PROFILE_URL = 'http://localhost:3001/api/v1/users/profile';
 
 function setCurrentUser({ user }) {
   return {
@@ -14,16 +14,16 @@ function setCurrentUser({ user }) {
 function createUser({ user }) {
   return dispatch => {
     return fetch(USERS_URL, {
-      method: "POST",
+      method: 'POST',
       body: JSON.stringify({ user }),
       headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json"
+        Accept: 'application/json',
+        'Content-Type': 'application/json'
       }
     })
       .then(r => r.json())
       .then(json => {
-        localStorage.setItem("token", json.jwt);
+        localStorage.setItem('token', json.jwt);
         dispatch(setCurrentUser(json));
       });
   };
@@ -32,16 +32,16 @@ function createUser({ user }) {
 function loginUser({ user }) {
   return dispatch => {
     return fetch(LOGIN_URL, {
-      method: "POST",
+      method: 'POST',
       body: JSON.stringify({ user }),
       headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json"
+        Accept: 'application/json',
+        'Content-Type': 'application/json'
       }
     })
       .then(r => r.json())
       .then(json => {
-        localStorage.setItem("token", json.jwt);
+        localStorage.setItem('token', json.jwt);
         dispatch(setCurrentUser(json));
       });
   };
@@ -49,12 +49,13 @@ function loginUser({ user }) {
 
 function getCurrentUserFromToken() {
   return dispatch => {
-    let token = localStorage.getItem("token");
+    const token = localStorage.getItem('token');
 
-    if (!token || token === "") {
+    if (!token || token === '') {
       return;
     }
 
+    // eslint-disable-next-line consistent-return
     return fetch(PROFILE_URL, {
       headers: {
         Authorization: `Bearer ${token}`
@@ -65,6 +66,7 @@ function getCurrentUserFromToken() {
   };
 }
 
+// TODO
 // Logging out does not occur within the login scene - it occurs within the HeaderMenu
 // component.  Not yet sure how to move this functionality to that component folder.
 // Will that change how my reducers/redux store would be set up?  Leaving here for now.
