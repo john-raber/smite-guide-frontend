@@ -12,8 +12,9 @@ import { getCurrentUserFromToken } from './scenes/Login/services/currentUser/act
 
 class App extends Component {
   componentDidMount() {
-    const { getCurrentUserFromToken } = this.props;
-    getCurrentUserFromToken();
+    // eslint-disable-next-line react/destructuring-assignment
+    const getUser = this.props.getCurrentUserFromToken;
+    getUser();
   }
 
   render() {
