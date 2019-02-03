@@ -12,7 +12,8 @@ import { getCurrentUserFromToken } from './scenes/Login/services/currentUser/act
 
 class App extends Component {
   componentDidMount() {
-    this.props.getCurrentUserFromToken();
+    const { getCurrentUserFromToken } = this.props;
+    getCurrentUserFromToken();
   }
 
   render() {
