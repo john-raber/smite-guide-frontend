@@ -28,7 +28,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "cypress:open": "cypress open"
   },
   "browserslist": [
     ">0.2%",
@@ -38,6 +39,7 @@
   ],
   "devDependencies": {
     "babel-eslint": "9.0.0",
+    "cypress": "^3.1.5",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^4.0.0",
     "eslint-plugin-prettier": "^3.0.1",
