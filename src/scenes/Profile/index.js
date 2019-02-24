@@ -1,7 +1,7 @@
-import React from "react";
-import { Container, Row, Col, Jumbotron } from "reactstrap";
+import React from 'react';
+import { Container, Row, Col, Jumbotron } from 'reactstrap';
 
-import "./Profile.css";
+import './Profile.css';
 
 const Profile = () => {
   return (

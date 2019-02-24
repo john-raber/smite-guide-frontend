@@ -1,17 +1,18 @@
-import React, { Component } from "react";
-import { connect } from "react-redux";
-import { withRouter } from "react-router-dom";
-import { Form, Button } from "reactstrap";
+import React, { Component, Fragment } from 'react';
+import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
+import { Form, Button } from 'reactstrap';
 
-import EmailInput from "../EmailInput/index";
-import PasswordInput from "../PasswordInput/index";
+import ErrorMenu from '../../../../components/ErrorMenu/index';
+import EmailInput from '../EmailInput/index';
+import PasswordInput from '../PasswordInput/index';
 
-import { loginUser } from "../../services/currentUser/actions/index";
+import { loginUser } from '../../services/currentUser/actions/index';
 
 class LoginForm extends Component {
   state = {
-    email: "",
-    password: ""
+    email: '',
+    password: ''
   };
 
   handleFormSubmit = e => {
@@ -19,7 +20,7 @@ class LoginForm extends Component {
 
     e.preventDefault();
 
-    loginUser({ user: this.state }).then(history.push("/profile"));
+    loginUser({ user: this.state }).then(history.push('/profile'));
   };
 
   handleInputChange = (name, value) => {
@@ -30,17 +31,16 @@ class LoginForm extends Component {
 
   render() {
     return (
-      <Form className="LoginForm" onSubmit={this.handleFormSubmit}>
-        <EmailInput
-          value={this.state.email}
-          onChange={this.handleInputChange}
-        />
-        <PasswordInput
-          value={this.state.password}
-          onChange={this.handleInputChange}
-        />
-        <Button color="warning">Login</Button>
-      </Form>
+      <Fragment>
+        {this.state.errors ? <ErrorMenu /> : null}
+        <Form className="LoginForm" onSubmit={this.handleFormSubmit}>
+          <EmailInput value={this.state.email} onChange={this.handleInputChange} />
+          <PasswordInput value={this.state.password} onChange={this.handleInputChange} />
+          <Button className="login-submit" color="warning">
+            Login
+          </Button>
+        </Form>
+      </Fragment>
     );
   }
 }
